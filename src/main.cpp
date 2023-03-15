@@ -54,7 +54,7 @@ int main() {
             case I2CSlave::WriteAddressed:
                 slave.read(read_buffer, 10);
                 printf("Read A: %s\n", read_buffer);
-                debugLed = !debugLed;
+                debugLed = 1;
 
                 int8_t commande_recue = read_buffer[0];
 
